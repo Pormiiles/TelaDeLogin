@@ -39,13 +39,22 @@
     }
 
     #login > #imagem {
-        left: left;
+        left: right;
         width: 50%;
         height: 100%;
     }
 
     #login > #formulario {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    #formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    #formulario > h1 {
+        font-size: 1.2em;
     }
 }
