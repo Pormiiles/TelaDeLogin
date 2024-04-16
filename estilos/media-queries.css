@@ -35,26 +35,26 @@
     } 
 
     #login {
-        width: 950px;
+        width: 100%; /* Alterado para ocupar toda a largura disponível */
+        max-width: 950px; /* Define uma largura máxima para evitar que o conteúdo se espalhe demais */
+        margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+        overflow: hidden; /* Garante que o conteúdo não ultrapasse a largura de #login */
     }
 
     #login > #imagem {
-        left: right;
+        float: left;
         width: 50%;
         height: 100%;
     }
 
     #login > #formulario {
-        float: left;
+        float: right; /* Alterado para float: right */
         width: 50%;
     }
 
     #formulario > h1 {
         text-align: center;
         margin-bottom: 10px;
-    }
-    
-    #formulario > h1 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Consolidado os estilos em um único bloco */
     }
 }
