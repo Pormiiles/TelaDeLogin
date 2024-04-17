@@ -33,12 +33,16 @@ main {
 #login {
     background-color: white;
     width: 250px;
-    height: 530px;
+    height: 555px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.499);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
 #login > #imagem {
@@ -52,12 +56,16 @@ main {
 
 #login > #formulario {
     display: block;
-    padding: 10px;
+    padding: 20px;
 }
 
 #formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
+}
+
+#formulario > p {
+    margin: 20px 0px;
 }
 
 form > div.campo {
@@ -73,6 +81,30 @@ div.campo > label {
     display: none;
 }
 
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #54d3fa;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    border: 0px;
+    border-radius: 5px;
+    border: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
@@ -82,6 +114,7 @@ form > input[type=submit] {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 form > input[type=submit]:hover {
